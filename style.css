@@ -1,0 +1,255 @@
+/* 1. UMUMIY SOZLAMALAR */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: #f0f2f5;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* 2. HEADER VA NAVIGATSIYA */
+
+header {
+    background: #5b6ea9;
+    color: white;
+    padding: 20px 40px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.logo {
+    width: 45px;
+    height: 45px;
+    border-radius: 8px;
+}
+
+nav {
+    background: white;
+    padding: 15px 40px;
+    display: flex;
+    gap: 20px;
+    border-bottom: 1px solid #ddd;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+nav a {
+    text-decoration: none;
+    color: #4169e1;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #764ba2;
+}
+
+/* 3. HERO */
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 60px 20px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+}
+
+.hero h1 {
+    font-size: 40px;
+    margin-bottom: 30px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+}
+
+/* RO'YXATDAN O'TISH KARTASI */
+
+#registerCard {
+    background: white;
+    padding: 2rem;
+    border-radius: 20px;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+    width: 100%;
+    max-width: 380px;
+    text-align: center;
+    color: #333;
+}
+
+#registerCard h2 {
+    margin-bottom: 1.5rem;
+    color: #444;
+}
+
+.field {
+    margin-bottom: 1.2rem;
+}
+
+.input {
+    width: 100%;
+    padding: 12px 15px;
+    border: 2px solid #eee;
+    border-radius: 10px;
+    outline: none;
+    transition: all 0.3s ease;
+    font-size: 16px;
+}
+
+.input:focus {
+    border-color: #764ba2;
+    box-shadow: 0 0 8px rgba(118, 75, 162, 0.2);
+}
+
+/* 4. TUGMALAR */
+
+.btn {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.primary {
+    background-color: #764ba2;
+    color: white;
+}
+
+.primary:hover {
+    background-color: #5a397a;
+    transform: translateY(-2px);
+}
+
+.press:active {
+    transform: scale(0.96);
+}
+
+.hint {
+    margin-top: 1rem;
+    font-size: 0.85rem;
+    color: #777;
+}
+
+/* 5. KARTALAR */
+
+.cards {
+    padding: 50px 40px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+}
+
+.cards .card {
+    background: white;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+    text-align: center;
+    transition: 0.3s ease;
+    animation: float 4s ease-in-out infinite;
+}
+
+.cards .card:hover {
+    animation: shake 0.4s ease-in-out;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+}
+
+/* 6. ANIMATSIYALAR */
+
+@keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}
+
+@keyframes shake {
+    0%, 100% { transform: translateX(0); }
+    25% { transform: translateX(-6px); }
+    75% { transform: translateX(6px); }
+}
+
+/* 7. FOOTER */
+
+footer {
+    background: #4169e1;
+    color: white;
+    padding: 30px;
+    text-align: center;
+    margin-top: 50px;
+}
+.section-title {
+    text-align: center;
+    margin-top: 60px;
+    color: #2c3e50;
+    border-bottom: 2px solid #3498db;
+    display: inline-block;
+    width: 100%;
+    padding-bottom: 10px;
+}
+
+.book-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.card.book {
+    background: #754cd3;
+    color: white;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.card.book:hover {
+    transform: translateY(-5px);
+    background: #3745da;
+}
+
+.card.mock {
+    border-left: 5px solid #27ae60;
+}
+/* ADMIN MODAL */
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.7);
+    backdrop-filter: blur(5px);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background: white;
+    padding: 30px;
+    border-radius: 20px;
+    width: 90%;
+    max-width: 350px;
+    text-align: center;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+}
+
+.modal-content h2 {
+    margin-bottom: 20px;
+    color: #5b6ea9;
+}
+
+/* SILLIQ SCROLL */
+
+html {
+    scroll-behavior: smooth;
+}

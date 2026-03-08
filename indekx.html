@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Learn English - Grammarway Edition</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+<img src="assets/logo.png" class="logo" alt="Logo">
+<h2>Learn English</h2>
+</header>
+
+<nav>
+<a href="#home">Home</a>
+<a href="#grammar">Grammar</a>
+<a href="#vocabulary">Vocabulary</a>
+<a href="#multilevel">Speaking Mocks</a>
+<a href="#" id="adminBtn">Admin Panel</a>
+</nav>
+
+<main class="wrap">
+
+<section class="hero" id="home">
+<h1>Learn English Easily</h1>
+<p>Grammarway, 4000 Essential Words va MultiLevel Record darslari.</p>
+
+<section class="card" id="registerCard">
+
+<h2>Ro‘yxatdan o‘tish</h2>
+
+<div class="field">
+<input class="input" id="regName" placeholder="Ismingiz (Nick)">
+</div>
+
+<div class="field">
+<input class="input" id="regPhone" placeholder="Telefon raqam (+998...)">
+</div>
+
+<button class="btn primary press" id="btnRegister">
+Ro‘yxatdan o‘tish
+</button>
+
+<p class="hint">Har doim jonli darslar olib boraman.</p>
+
+</section>
+</section>
+
+
+<!-- GRAMMAR -->
+
+<h2 class="section-title" id="grammar">
+Grammar Lessons (Grammarway 1)
+</h2>
+
+<section class="cards" id="lessonsContainer">
+
+<div class="card" data-title="Unit 1" data-desc="Plurals / Countable - Uncountable Nouns">
+<h3>Unit 1</h3>
+<p>Plurals & Nouns</p>
+</div>
+
+<div class="card" data-title="Unit 2" data-desc="Subject Pronouns / The Verb 'To be'">
+<h3>Unit 2</h3>
+<p>The Verb 'To be'</p>
+</div>
+
+<div class="card" data-title="Unit 3" data-desc="Articles (A/An - The)">
+<h3>Unit 3</h3>
+<p>Articles</p>
+</div>
+
+<div class="card" data-title="Unit 4" data-desc="The Verbs 'Have Got' - 'Can'">
+<h3>Unit 4</h3>
+<p>Have Got & Can</p>
+</div>
+
+<div class="card" data-title="Unit 5" data-desc="Possessives">
+<h3>Unit 5</h3>
+<p>Possessives</p>
+</div>
+
+<div class="card" data-title="Unit 6" data-desc="Present Continuous">
+<h3>Unit 6</h3>
+<p>Present Continuous</p>
+</div>
+
+</section>
+
+
+<!-- VOCABULARY -->
+
+<h2 class="section-title" id="vocabulary">
+Vocabulary (4000 Essential English Words)
+</h2>
+
+<section class="book-grid">
+
+<div class="card book"><h3>Book 1</h3><p>Essential Words</p></div>
+<div class="card book"><h3>Book 2</h3><p>Essential Words</p></div>
+<div class="card book"><h3>Book 3</h3><p>Essential Words</p></div>
+<div class="card book"><h3>Book 4</h3><p>Essential Words</p></div>
+<div class="card book"><h3>Book 5</h3><p>Essential Words</p></div>
+<div class="card book"><h3>Book 6</h3><p>Essential Words</p></div>
+
+</section>
+
+
+<!-- SPEAKING MOCKS -->
+
+<h2 class="section-title" id="multilevel">
+MultiLevel Record (Real Speaking Mocks)
+</h2>
+
+<section class="cards">
+
+<div class="card">
+<h3>Mock 1</h3>
+<p>Hometown & Challenges</p>
+</div>
+
+<div class="card">
+<h3>Mock 2</h3>
+<p>Education & Failure</p>
+</div>
+
+<div class="card">
+<h3>Mock 3</h3>
+<p>Music & Teamwork</p>
+</div>
+
+<div class="card">
+<h3>Mock 4</h3>
+<p>Sports & Success</p>
+</div>
+
+<div class="card">
+<h3>Mock 5</h3>
+<p>Health & Environment</p>
+</div>
+
+</section>
+
+</main>
+
+
+<!-- ADMIN MODAL -->
+
+<div id="adminModal" class="modal">
+
+<div class="modal-content">
+
+<h2>Admin Kirish</h2>
+
+<input type="text" id="admUser" class="input" placeholder="Login">
+
+<input type="password" id="admPass" class="input" placeholder="Parol">
+
+<button class="btn primary" onclick="loginAdmin()">
+Kirish
+</button>
+
+<button class="btn" onclick="closeModal()">
+Yopish
+</button>
+
+</div>
+
+</div>
+
+
+<footer>
+<p>© 2026 Learn English — All Rights Reserved.</p>
+</footer>
+
+<script src="sikripit.js"></script>
+
+</body>
+</html>
